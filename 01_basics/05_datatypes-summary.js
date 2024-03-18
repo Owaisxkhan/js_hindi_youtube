@@ -38,3 +38,31 @@ const myFunction = function(){
 // datatype of reference datatype is object and of function is object-function
 console.log(typeof heroes);
 console.log(typeof id);
+
+
+// ************** memory **************
+
+//stack (primitive), Heap (non-primitive)
+
+let myYoutubeName = "trgxowaisdotcom"
+
+let anotherName = myYoutubeName
+
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi :"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "OWAIS@GOOGLE.COM"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// heap ke andr reference jaata hai isliye change hogya dono
